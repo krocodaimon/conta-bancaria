@@ -2,6 +2,8 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.util.Cores;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -10,6 +12,9 @@ public class Menu {
 		int opcao;
 		
 		while(true) {
+			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
+					+ "\n-----------------------------------------------------------");
+
 			System.out.println("\n-----------------------------------------------------------");
 			System.out.println("                                                     ");
 			System.out.println("                BANCO DO BRAZIL COM Z                ");
@@ -24,6 +29,11 @@ public class Menu {
 			System.out.println("            6 - Sacar                                ");
 			System.out.println("            7 - Depositar                            ");
 			System.out.println("            8 - Transferir valores entre Contas      ");
+			System.out.println("            9 - Sair                                 ");
+			System.out.println("                                                     ");
+			System.out.println("\n-----------------------------------------------------------");
+			System.out.println("Entre com a opção desejada:                          ");
+			System.out.println("                                                     " + Cores.TEXT_RESET);
 	
 			opcao = leia.nextInt();
 			// objeto leia, para armazenar na variavel opcao
